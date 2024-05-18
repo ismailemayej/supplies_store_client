@@ -1,7 +1,6 @@
 import React from "react";
 
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import { Button } from "@nextui-org/button";
 import { ShoppingBag } from "lucide-react";
 import Link from "next/link";
 
@@ -23,6 +22,7 @@ const ProductCard = ({ title, img, price, id }: any) => {
           <b>{title}</b>
           <p className=" text-orange-500 text-md ">${price}</p>
         </CardFooter>
+        {/* product buy button  */}
         <CardFooter className="lg:text-small text-[11px] justify-between">
           <div className="flex gap-2 bottom-0 left-0 w-full">
             <Link
