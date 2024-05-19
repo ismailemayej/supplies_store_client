@@ -1,5 +1,4 @@
 import Navbar from "@/components/shared/Navbar/Navbar";
-import DashboardPage from "./(withCommonLayout)/page";
 import Footer from "@/components/shared/Footer/Footer";
 import Container from "@/components/ui/Container";
 import HeroSection from "@/components/ui/Home/HeroSection/HeroSection";
