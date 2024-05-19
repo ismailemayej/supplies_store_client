@@ -8,12 +8,10 @@ export const generateStaticParams = async () => {
     productId: p._id,
   }));
 };
-
 const ProductDetail = async ({ params }: { params: { productId: string } }) => {
   const res = await fetch(
     `https://supplies-store-server.vercel.app/api/v1/product/${params.productId}`
   );
-
   const data = await res.json();
   return (
     <div>

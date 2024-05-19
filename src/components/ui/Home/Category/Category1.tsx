@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductCard from "../../ProductCard";
 import ProductSlider from "../../ProductSlider";
 import { getProductsByCategory } from "@/app/Api/GetData";
-const Category = async () => {
+const Category1 = async () => {
   const category = "Floor Cleaners";
   const data = await getProductsByCategory(category);
   return (
@@ -41,4 +41,4 @@ const Category = async () => {
   );
 };
 
-export default Category;
+export default Category1;
