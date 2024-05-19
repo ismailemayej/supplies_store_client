@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionCard from "../../SectionCard";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";
@@ -28,7 +28,7 @@ const Category2 = async () => {
             title={product.title}
             price={product.price}
             img={product.images__001}
-            // rating={product.rating}
+            // ratings={product.ratings}
             // review={product.review}
             // category={product.category}
             // description={product.description}

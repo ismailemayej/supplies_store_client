@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import SectionCard from "../../SectionCard";
 import Link from "next/link";
 import "react-multi-carousel/lib/styles.css";

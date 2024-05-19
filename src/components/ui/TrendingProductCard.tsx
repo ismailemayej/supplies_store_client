@@ -1,6 +1,5 @@
 import { Image } from "antd";
 import React from "react";
-
 const TrendingProductCard = () => {
   return (
     <div className="card card-compact lg:w-full lg:h-full lg:bg-base-100 shadow-xl m-2 border">

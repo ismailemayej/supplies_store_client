@@ -3,30 +3,27 @@ import CoundownTimer from "../../Countdown";
 import FlashSaleCard from "../../FlashSaleCard";
 import SectionCard from "../../SectionCard";
 import ProductSlider from "../../ProductSlider";
-import ProductCard from "../../ProductCard";
-import Link from "next/link";
+import { getProducts } from "@/app/Api/GetData";
 
 const FlashSale = async () => {
-  const res = await fetch(
-    "https://supplies-store-server.vercel.app/api/v1/products",
-    {
-      next: { revalidate: 30 },
-    }
+  const items: any = await getProducts();
+  const discountedItems = items?.data?.filter(
+    (product: any) => product.discount
   );
-  const data = await res.json();
+
   return (
     <div className="lg:mb-14 mb-3 bg-slate-50">
       <SectionCard Ltitle="Flash Sale" Rtitle={<CoundownTimer />} />
-
       <ProductSlider>
-        {data?.data?.slice(1, 20)?.map((product: any) => (
+        {discountedItems?.map((product: any) => (
           <FlashSaleCard
             key={product._id}
             id={product._id}
             title={product.title}
             price={product.price}
             img={product.images__001}
-            // rating={product.rating}
+            discount={product.discount}
+            // ratings={product.ratings}
             // review={product.review}
             // category={product.category}
             // description={product.description}

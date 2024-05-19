@@ -3,7 +3,7 @@ import React from "react";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import Link from "next/link";
 
-const FlashSaleCard = ({ img, title, price, id }: any) => {
+const FlashSaleCard = ({ img, title, price, id, discount }: any) => {
   return (
     <Card shadow="sm" key={id} className="lg:mx-2 mx-1 h-[18rem]">
       <CardBody className=" overflow-visible object-cover transition duration-500 group-hover:scale-105">
@@ -16,7 +16,7 @@ const FlashSaleCard = ({ img, title, price, id }: any) => {
           src={img}
         />
         <span className=" absolute z-10 border-double border-emerald-950 bg-[#ebf507] rounded-full text-black font-semibold px-3 y-1 top-4 right-4">
-          10%
+          {discount}%
         </span>
       </CardBody>
       <CardFooter className="lg:text-small text-[11px] justify-between">

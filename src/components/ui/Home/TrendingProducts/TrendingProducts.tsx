@@ -3,13 +3,10 @@ import SectionCard from "../../SectionCard";
 import Link from "next/link";
 import ProductSlider from "../../ProductSlider";
 import ProductCard from "../../ProductCard";
+import { getProducts } from "@/app/Api/GetData";
 
 const TrendingProducts = async () => {
-  const res = await fetch(
-    "https://supplies-store-server.vercel.app/api/v1/products"
-  );
-  const data = await res.json();
-
+  const data: any = await getProducts();
   return (
     <div className="lg:mt-10">
       <SectionCard
