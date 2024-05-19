@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { EffectFade, Navigation, Pagination } from "swiper/modules";
 import HomeCategoryList from "../../HomeCategoryList";
+import { Image } from "antd";
 const HeroSection = () => {
   return (
     <div className="lg:grid grid-cols-12 lg:gap-4 lg:items-center">
@@ -25,25 +26,29 @@ const HeroSection = () => {
           className="mySwiper w-full lg:h-[400px] h-[230px] my-3 rounded-xl border-indigo-200 border-2"
         >
           <SwiperSlide className="bg-red-500">
-            <img
+            <Image
+              alt="image"
               className="w-full h-full"
               src="https://icms-image.slatic.net/images/ims-web/b10658ff-4bf1-418b-8657-47f2e32da776.jpg_1200x1200.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <img
+            <Image
+              alt="image"
               className="w-full h-full"
               src="https://icms-image.slatic.net/images/ims-web/8d6ea93d-fd41-408e-8e1c-3a1912afbbe6.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <img
+            <Image
+              alt="image"
               className="w-full h-full"
               src="https://icms-image.slatic.net/images/ims-web/d5b6cb3f-27d9-4e77-afa7-5117c8b57b27.jpg"
             />
           </SwiperSlide>
           <SwiperSlide>
-            <img
+            <Image
+              alt="image"
               className="w-full h-full"
               src="https://icms-image.slatic.net/images/ims-web/205d0c5a-e6af-4d75-9c46-74206211cd79.jpg"
             />

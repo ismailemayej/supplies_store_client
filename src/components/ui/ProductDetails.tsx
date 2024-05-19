@@ -11,7 +11,7 @@ const ProductDetails = ({ productInfo }: any) => {
               <div className="mt-6 gap-6 mx-auto w-[25%]">
                 <br />
                 <div className="rounded-xl p-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
-                  <img
+                  <Image
                     src={productInfo.images__001}
                     alt="Product2"
                     className="w-24 cursor-pointer"
@@ -19,7 +19,7 @@ const ProductDetails = ({ productInfo }: any) => {
                 </div>
                 <br />
                 <div className="rounded-xl p-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
-                  <img
+                  <Image
                     src={productInfo.images__002}
                     alt="Product2"
                     className="w-24 cursor-pointer"
@@ -27,7 +27,7 @@ const ProductDetails = ({ productInfo }: any) => {
                 </div>
                 <br />
                 <div className="rounded-xl p-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
-                  <img
+                  <Image
                     src={productInfo.images__003}
                     alt="Product2"
                     className="w-24 cursor-pointer"
@@ -35,7 +35,7 @@ const ProductDetails = ({ productInfo }: any) => {
                 </div>
               </div>
               <div className=" w-[75%] px-4 py-10 rounded-xl shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] relative">
-                <img
+                <Image
                   src={productInfo.images__001}
                   alt="Product"
                   className="w-4/5 rounded object-cover"
@@ -65,8 +65,8 @@ const ProductDetails = ({ productInfo }: any) => {
                 <p className="text-[#333] text-3xl font-bold">
                   ${productInfo.price}
                 </p>
-                <p className="text-gray-400 text-xl">
-                  <strike>{productInfo.price + 5.3}</strike>{" "}
+                <p className="text-gray-400 text-xl line-through">
+                  {productInfo.price + 5.3}
                   <span className="text-sm ml-1">Tax included</span>
                 </p>
               </div>

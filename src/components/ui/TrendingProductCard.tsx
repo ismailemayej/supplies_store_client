@@ -1,10 +1,11 @@
+import { Image } from "antd";
 import React from "react";
 
 const TrendingProductCard = () => {
   return (
     <div className="card card-compact lg:w-full lg:h-full lg:bg-base-100 shadow-xl m-2 border">
       <figure>
-        <img
+        <Image
           src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
           alt="Shoes"
         />
