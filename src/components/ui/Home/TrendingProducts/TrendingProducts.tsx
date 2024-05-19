@@ -5,7 +5,9 @@ import ProductSlider from "../../ProductSlider";
 import ProductCard from "../../ProductCard";
 
 const TrendingProducts = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
+  const res = await fetch(
+    "https://supplies-store-server.vercel.app/api/v1/products"
+  );
   const data = await res.json();
 
   return (

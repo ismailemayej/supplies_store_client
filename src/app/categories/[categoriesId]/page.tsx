@@ -3,7 +3,7 @@ import SectionCard from "@/components/ui/SectionCard";
 import React from "react";
 const AllCategory = async ({ params }: any) => {
   const res = await fetch(
-    `http://localhost:5000/api/v1?category=${params.categoriesId}`,
+    `https://supplies-store-server.vercel.app/api/v1?category=${params.categoriesId}`,
     {
       cache: "no-store",
     }

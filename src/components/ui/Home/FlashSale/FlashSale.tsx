@@ -7,9 +7,12 @@ import ProductCard from "../../ProductCard";
 import Link from "next/link";
 
 const FlashSale = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products", {
-    next: { revalidate: 30 },
-  });
+  const res = await fetch(
+    "https://supplies-store-server.vercel.app/api/v1/products",
+    {
+      next: { revalidate: 30 },
+    }
+  );
   const data = await res.json();
   return (
     <div className="lg:mb-14 mb-3 bg-slate-50">
