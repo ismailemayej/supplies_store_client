@@ -1,9 +1,9 @@
+import { getProducts } from "@/app/Api/GetData";
 import ProductDetails from "@/components/ui/ProductDetails";
 import "react-rater/lib/react-rater.css";
 
 export const generateStaticParams = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
-  const data = await res.json();
+  const data = await getProducts();
   return data.data.slice(0, 11).map((p: any) => ({
     productId: p._id,
   }));
