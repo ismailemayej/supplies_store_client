@@ -3,12 +3,17 @@ import CoundownTimer from "../../Countdown";
 import FlashSaleCard from "../../FlashSaleCard";
 import SectionCard from "../../SectionCard";
 import ProductSlider from "../../ProductSlider";
-import { getProducts } from "@/app/Api/GetData";
 import Link from "next/link";
 import { ArrowBigRightDash } from "lucide-react";
 
 const FlashSale = async () => {
-  const items: any = await getProducts();
+  const response = await fetch(
+    "https://supplies-store-server.vercel.app/api/v1/products",
+    {
+      next: { revalidate: 30 },
+    }
+  );
+  const items = await response.json();
   const discountedItems = items?.data?.filter(
     (product: any) => product.discount
   );
@@ -17,7 +22,7 @@ const FlashSale = async () => {
     <div className="lg:mb-14 mb-3 bg-slate-50">
       <SectionCard Ltitle="Flash Sale" Rtitle={<CoundownTimer />} />
       <ProductSlider>
-        {discountedItems?.map((product: any) => (
+        {discountedItems?.slice(0, 7).map((product: any) => (
           <FlashSaleCard
             key={product._id}
             id={product._id}

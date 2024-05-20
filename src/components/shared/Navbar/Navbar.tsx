@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link href="/dashboard">Dashboard</Link>
           </li>
           <li>
-            <a> All Category </a>
+            <Link href="/categories/all-category"> All Category </Link>
           </li>
         </ul>
       </div>
