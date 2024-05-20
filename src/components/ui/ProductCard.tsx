@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
@@ -21,15 +20,15 @@ const ProductCard = ({ title, img, price, id, category }: any) => {
         </CardBody>
         <CardFooter className="lg:text-small text-[11px] justify-between">
           <b>{title}</b>
-          <p className=" text-orange-500 text-md ">${price}</p>
+          <p className=" text-orange-500 text-lg ">${price}</p>
         </CardFooter>
         {category}
         {/* product buy button  */}
         <CardFooter className="lg:text-small text-[11px] justify-between">
-          <div className="flex gap-2 bottom-0 left-0 w-full">
+          <div className="flex items-center gap-2 bottom-0 left-0 w-full">
             <Link
               href={`/product/${id}`}
-              className="text-center text-current text-xl text-white w-96 text-md px-3 py-2 hover:bg-teal-500 bg-purple-400 rounded-lg"
+              className="text-center lg:text-xl text-white w-96 text-[13px] items-center px-3 py-2 hover:bg-teal-500 bg-purple-400 rounded-lg"
             >
               Buy Now
             </Link>
