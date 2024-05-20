@@ -1,7 +1,7 @@
 import React from "react";
 
-const DashboardPage = () => {
-  return <div className="">This Dashboard</div>;
+const DashboardPage = ({ children }: { children: React.ReactNode }) => {
+  return <div>{children}</div>;
 };
 
 export default DashboardPage;
