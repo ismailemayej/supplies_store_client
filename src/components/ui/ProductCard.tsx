@@ -1,10 +1,11 @@
+"use client";
 import React from "react";
 
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { ShoppingBag } from "lucide-react";
 import Link from "next/link";
 
-const ProductCard = ({ title, img, price, id }: any) => {
+const ProductCard = ({ title, img, price, id, category }: any) => {
   return (
     <div className="relative">
       <Card shadow="sm" key={id} className="lg:mx-2 mx-1 h-[18rem]">
@@ -22,6 +23,7 @@ const ProductCard = ({ title, img, price, id }: any) => {
           <b>{title}</b>
           <p className=" text-orange-500 text-md ">${price}</p>
         </CardFooter>
+        {category}
         {/* product buy button  */}
         <CardFooter className="lg:text-small text-[11px] justify-between">
           <div className="flex gap-2 bottom-0 left-0 w-full">

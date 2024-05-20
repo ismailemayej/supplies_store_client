@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-primary-100 rounded-md w-52"
+            className="menu  menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-primary-100 rounded-md w-52"
           >
             <li>
               <a>Item 1</a>
@@ -56,12 +56,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">
-          <li>
+        <ul className="menu menu-horizontal px-1 text-lg ">
+          <li className=" rounded-lg">
             <Link href="/dashboard">Dashboard</Link>
           </li>
           <li>
-            <a>Item 3</a>
+            <a> All Category </a>
           </li>
         </ul>
       </div>

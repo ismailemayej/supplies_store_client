@@ -12,7 +12,6 @@ export default function Home() {
   return (
     <div>
       <Navbar />
-
       <Container className="">
         <HeroSection />
         <FlashSale />

@@ -7,6 +7,9 @@ import { getProducts } from "@/app/Api/GetData";
 
 const TrendingProducts = async () => {
   const data: any = await getProducts();
+  const filteredByRatings = data?.data?.filter(
+    (item: any) => item?.ratings >= 4.3
+  );
   return (
     <div className="lg:mt-10">
       <SectionCard
@@ -15,7 +18,7 @@ const TrendingProducts = async () => {
       />
 
       <ProductSlider>
-        {data?.data?.map((product: any) => (
+        {filteredByRatings?.map((product: any) => (
           <ProductCard
             key={product._id}
             id={product._id}
