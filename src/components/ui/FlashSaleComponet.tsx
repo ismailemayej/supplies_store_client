@@ -7,7 +7,7 @@ const FlashSaleComponet = ({ data }: any) => {
   const DataFilter = data?.data?.filter((item: any) => item.discount);
   return (
     <>
-      <SectionCard Ltitle="Flash Sale" Rt0itle />
+      <SectionCard Ltitle="Flash Sale" Rtitle="Limited Time Offer" />
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-3">
         {DataFilter.map((product: any) => (
           <FlashSaleCard

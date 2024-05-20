@@ -7,9 +7,8 @@ const ProductDetails = ({ productInfo }: any) => {
       <div className="font-sans bg-white">
         <div className="p-6 lg:max-w-7xl max-w-4xl mx-auto">
           <div className="grid items-start grid-cols-1 lg:grid-cols-5 gap-12 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] p-6">
-            <div className="lg:col-span-3 w-full lg:sticky top-0 text-center flex">
-              <div className="mt-6 gap-6 mx-auto w-[25%]">
-                <br />
+            <div className="lg:col-span-3 w-full lg:sticky top-0 text-center lg:flex">
+              <div className="mt-6  gap-6 mx-auto w-[25%]">
                 <div className="rounded-xl p-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
                   <Image
                     src={productInfo.images__001}
@@ -17,7 +16,7 @@ const ProductDetails = ({ productInfo }: any) => {
                     className="w-24 cursor-pointer"
                   />
                 </div>
-                <br />
+
                 <div className="rounded-xl p-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
                   <Image
                     src={productInfo.images__002}
@@ -25,7 +24,7 @@ const ProductDetails = ({ productInfo }: any) => {
                     className="w-24 cursor-pointer"
                   />
                 </div>
-                <br />
+
                 <div className="rounded-xl p-4 shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)]">
                   <Image
                     src={productInfo.images__003}
