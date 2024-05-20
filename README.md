@@ -1,38 +1,34 @@
-## Project: Relief Distribution
+## Project: Washing Supplied Store
 
-This is Relief Distribution web application for orphan ether releted organaigation.
+This is Washing Supplied Store web application for Modern E-Commerce Web site.
 
 ### Live link
 
-https://effulgent-hamster-d9942a.netlify.app/
+https://supplies-store-client.vercel.app/
 
 ### Live Server site
 
-https://relief-management-server-site.vercel.app/
+https://supplies-store-server.vercel.app
 
 ### Instraction for use
 
 - Firt show home some section.
-- navbar have three button "All relief Goods" , logIn/logOut button and User dashboard . but dashboard is incripted. use only Loged user.
-  loged user can post create,update , delete and get.
+- navbar have a logo, All Categoris, Dashboard ,
+- All Categories have a list of all categories.
+- Dashboard have a list of all products.
+- All products have a list of all products.
+- All products have a list of all products.
 
 ### Features
 
-- Dynamic user
 - Live previews
 - Hero section
-- RELIF GOOD POST
 - navbar
 - Home
-- AboutUs
-- Comunity
-- Top Donors List
-- user Reviews
-- Succesfully Program Photos Gallery
-- Service Location
-- Contact
-- Chart for Organagation information.
-- post create , Get, update and delete system.
+- FlasSale slider
+- Categary by show product slider
+- Tending Product slider
+- Footer
 
 ### Technology
 
@@ -42,11 +38,10 @@ https://relief-management-server-site.vercel.app/
 - javaScript
 - TypeScript
 - React
-- Redux tolkit
-- RTK Query
-- React Router Dom
+- Next.js
+- Vercel
 - Other
 
 ### use
 
-- Locally run this project `npm run dev`
+- Locally run this project `yarn run dev`
