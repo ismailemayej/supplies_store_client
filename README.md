@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Project: Relief Distribution
 
-## Getting Started
+This is Relief Distribution web application for orphan ether releted organaigation.
 
-First, run the development server:
+### Live link
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+https://effulgent-hamster-d9942a.netlify.app/
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Live Server site
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+https://relief-management-server-site.vercel.app/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Instraction for use
 
-## Learn More
+- Firt show home some section.
+- navbar have three button "All relief Goods" , logIn/logOut button and User dashboard . but dashboard is incripted. use only Loged user.
+  loged user can post create,update , delete and get.
 
-To learn more about Next.js, take a look at the following resources:
+### Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Dynamic user
+- Live previews
+- Hero section
+- RELIF GOOD POST
+- navbar
+- Home
+- AboutUs
+- Comunity
+- Top Donors List
+- user Reviews
+- Succesfully Program Photos Gallery
+- Service Location
+- Contact
+- Chart for Organagation information.
+- post create , Get, update and delete system.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Technology
 
-## Deploy on Vercel
+- html
+- css
+- Tailwind css
+- javaScript
+- TypeScript
+- React
+- Redux tolkit
+- RTK Query
+- React Router Dom
+- Other
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### use
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Locally run this project `npm run dev`

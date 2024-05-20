@@ -9,8 +9,9 @@ const DashboardSidebar = async ({ uniqueCategories }: any) => {
         <CopyPlus /> <span>Categories</span>
       </div>
       <ul className="space-y-1 grid grid-cols-2 gap-2 m-2 ">
-        {uniqueCategories.map((catItem: any) => (
+        {uniqueCategories.map((catItem: any, index: any) => (
           <Button
+            key={index}
             radius="lg"
             variant="ghost"
             className=" border bg-yellow-800  shadow-xl w-full text-left py-2 px-1"
