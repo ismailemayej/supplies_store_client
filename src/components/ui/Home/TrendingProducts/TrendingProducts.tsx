@@ -14,7 +14,7 @@ const TrendingProducts = async () => {
     <div className="lg:mt-10">
       <SectionCard
         Ltitle=" Trending Products"
-        Rtitle={<Link href="/">See All</Link>}
+        Rtitle={<Link href="/trending-products">See All</Link>}
       />
 
       <ProductSlider>
