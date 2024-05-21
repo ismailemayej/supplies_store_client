@@ -2,7 +2,7 @@
 import { Button } from "@nextui-org/button";
 import React from "react";
 
-const CategoryCard = ({ title, img, price, id,,category }: any) => {
+const CategoryCard = ({ title, img, price, id, category }: any) => {
   return (
     <tbody className="text-black">
       <tr
