@@ -4,8 +4,7 @@ import Link from "next/link";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { ShoppingBag } from "lucide-react";
 
-const CategoryCard = ({ product }: any) => {
-  const { title, img, price, id } = product;
+const CategoryCard = ({ title, img, price, id }: any) => {
   return (
     <div className="relative">
       <Card shadow="sm" key={id} className="lg:mx-2 mx-1 h-[18rem]">
