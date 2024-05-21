@@ -1,42 +1,38 @@
 "use client";
+import { Button } from "@nextui-org/button";
 import React from "react";
-import Link from "next/link";
-import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import { ShoppingBag } from "lucide-react";
 
-const CategoryCard = ({ title, img, price, id }: any) => {
+const CategoryCard = ({ title, img, price, id, rating, category }: any) => {
   return (
-    <div className="relative">
-      <Card shadow="sm" key={id} className="lg:mx-2 mx-1 h-[18rem]">
-        <CardBody className="overflow-visible object-cover transition duration-500 group-hover:scale-105">
-          <Image
-            shadow="sm"
-            radius="lg"
-            width="100%"
-            alt={title}
-            className="w-full object-cover h-[140px] "
+    <tbody className="text-black">
+      <tr
+        key={id}
+        className=" bg-white hover:translate-x-2 hover:bg-slate-200 delay-100  px-4 border-b0 hover:rounded-xl "
+      >
+        <td className="p-4">
+          <img
             src={img}
+            className="w-16 md:w-32 max-w-full rounded-xl border max-h-full"
+            alt={title}
           />
-        </CardBody>
-        <CardFooter className="lg:text-small text-[11px] justify-between">
-          <b>{title}</b>
-          <p className=" text-orange-500 text-xl ">${price}</p>
-        </CardFooter>
-        <CardFooter className="lg:text-small text-[11px] justify-between">
-          <div className="flex gap-2 bottom-0 left-0 w-full">
-            <Link
-              href={`/product/${id}`}
-              className="text-center text-current text-xl text-white w-96 text-md px-3 py-2 hover:bg-teal-500 bg-purple-400 rounded-lg"
-            >
-              Buy Now
-            </Link>
-            <button className="flex justify-items-center bg-purple-400 rounded-xl p-2 text-white">
-              <ShoppingBag />
-            </button>
+        </td>
+        <td className="px-6 py-4 font-semibold">{title}</td>
+        <td className="px-6 py-4">
+          <div className="flex items-center">{category}</div>
+        </td>
+        <td className="px-6 py-4 font-semibold">${price}</td>
+        <td className="px-6 py-4">
+          <div
+            className="inline-flex mr-2 rounded-md shadow-sm text-white"
+            role="group"
+          >
+            <Button className="text-white" color="success">
+              Manage
+            </Button>
           </div>
-        </CardFooter>
-      </Card>
-    </div>
+        </td>
+      </tr>
+    </tbody>
   );
 };
 
