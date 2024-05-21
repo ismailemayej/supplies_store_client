@@ -6,7 +6,13 @@ import ProductCard from "../../ProductCard";
 import { getProducts } from "@/app/Api/GetData";
 
 const TrendingProducts = async () => {
-  const data: any = await getProducts();
+  const response = await fetch(
+    "https://supplies-store-server.vercel.app/api/v1/products",
+    {
+      next: { revalidate: 30 },
+    }
+  );
+  const data = await response.json();
   const filteredByRatings = data?.data?.filter(
     (item: any) => item?.ratings >= 4.3
   );
@@ -18,7 +24,7 @@ const TrendingProducts = async () => {
       />
 
       <ProductSlider>
-        {filteredByRatings?.map((product: any) => (
+        {filteredByRatings?.slice(0, 7).map((product: any) => (
           <ProductCard
             key={product._id}
             id={product._id}
