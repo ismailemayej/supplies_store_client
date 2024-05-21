@@ -9,7 +9,7 @@ const Navbar = () => {
   const menu = [
     {
       name: "Dashboard",
-      link: "dashboard/category?category=Floor%20Cleaners",
+      link: "/dashboard/category?category=Floor%20Cleaners",
     },
     {
       name: "All Category",
