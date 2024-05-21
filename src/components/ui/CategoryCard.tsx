@@ -1,5 +1,6 @@
 "use client";
 import { Button } from "@nextui-org/button";
+import { Image } from "@nextui-org/react";
 import React from "react";
 
 const CategoryCard = ({ title, img, price, id, category }: any) => {
@@ -10,7 +11,7 @@ const CategoryCard = ({ title, img, price, id, category }: any) => {
         className=" bg-white hover:bg-slate-200 delay-100  px-4 border-b0 hover:rounded-xl "
       >
         <td className="p-4">
-          <img
+          <Image
             src={img}
             className="w-16 md:w-32 max-w-full rounded-xl border max-h-full"
             alt={title}

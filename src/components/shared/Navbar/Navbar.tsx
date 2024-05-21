@@ -44,8 +44,8 @@ const Navbar = () => {
               tabIndex={0}
               className="menu  menu-sm dropdown-content mt-3 z-[5] p-2 shadow bg-primary-100 rounded-md w-52"
             >
-              {menu.map((item: any) => (
-                <li className=" rounded-lg hover:bg-orange-900">
+              {menu.map((item: any, index) => (
+                <li key={index} className=" rounded-lg hover:bg-orange-900">
                   <Link href={item.link}>{item.name}</Link>
                 </li>
               ))}
@@ -61,8 +61,8 @@ const Navbar = () => {
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 text-lg ">
-            {menu.map((item: any) => (
-              <li className=" rounded-lg hover:bg-orange-800">
+            {menu.map((item: any, index) => (
+              <li key={index} className=" rounded-lg hover:bg-orange-800">
                 <Link href={item.link}>{item.name}</Link>
               </li>
             ))}
