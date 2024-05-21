@@ -5,9 +5,7 @@ import { Col, Row, Statistic } from "antd";
 
 const { Countdown } = Statistic;
 const deadline = Date.now() + 1000 * 20 * 20 * 24 * 2 + 1000 * 30;
-const onFinish: CountdownProps["onFinish"] = () => {
-  console.log("finished!");
-};
+const onFinish: CountdownProps["onFinish"] = () => {};
 
 const CoundownTimer = () => (
   <div>

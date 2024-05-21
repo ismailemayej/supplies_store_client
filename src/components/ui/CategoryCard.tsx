@@ -5,7 +5,6 @@ import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
 import { ShoppingBag } from "lucide-react";
 
 const CategoryCard = ({ title, img, price, id }: any) => {
-  console.log("Category Card", id);
   return (
     <div className="relative">
       <Card shadow="sm" key={id} className="lg:mx-2 mx-1 h-[18rem]">

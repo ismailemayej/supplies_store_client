@@ -16,9 +16,7 @@ const ProductDetail = async ({ params }: any) => {
       cache: "no-store",
     }
   );
-  console.log("post Details data id", params.productId);
   const data = await res.json();
-  console.log("post Details data id", data);
   return (
     <div>
       <ProductDetails productInfo={data} />
