@@ -1,4 +1,4 @@
-import CategoryCard from "@/components/ui/CategoryCard";
+import ProductCard from "@/components/ui/ProductCard";
 import SectionCard from "@/components/ui/SectionCard";
 import React from "react";
 const AllCategory = async ({ params }: any) => {
@@ -16,7 +16,7 @@ const AllCategory = async ({ params }: any) => {
       <SectionCard Rtitle="" Ltitle={data?.data[0]?.category__name} />
       <div className="grid lg:grid-cols-5 grid-cols-1 p-3 gap-3">
         {data?.data?.map((product: any) => (
-          <CategoryCard
+          <ProductCard
             key={product._id}
             id={product._id}
             title={product.title}
