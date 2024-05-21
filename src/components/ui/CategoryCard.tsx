@@ -7,7 +7,7 @@ const CategoryCard = ({ title, img, price, id, category }: any) => {
     <tbody className="text-black">
       <tr
         key={id}
-        className=" bg-white hover:translate-x-2 hover:bg-slate-200 delay-100  px-4 border-b0 hover:rounded-xl "
+        className=" bg-white hover:bg-slate-200 delay-100  px-4 border-b0 hover:rounded-xl "
       >
         <td className="p-4">
           <img
