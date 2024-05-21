@@ -6,11 +6,11 @@ const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <Navbar />
-      <Container className=" h-screen">
-        <div className="lg:col-span-9 col-span-9 m-2 rounded-xl p-3 border">
-          {children}
-        </div>
-      </Container>
+
+      <div className="lg:col-span-9 col-span-9 m-2 rounded-xl p-3 border">
+        {children}
+      </div>
+
       <Footer />
     </div>
   );
