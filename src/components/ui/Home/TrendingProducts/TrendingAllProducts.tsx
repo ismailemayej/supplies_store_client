@@ -8,7 +8,7 @@ const TrendingAllProducts = ({ data }: any) => {
     <div className="h-screen">
       <SectionCard Ltitle="Trending Products" Rtitle="Most popular products" />
       <div className="grid lg:grid-cols-5 grid-cols-2 gap-3">
-        {filterdata.map((product: any) => (
+        {filterdata?.slice(0, 7).map((product: any) => (
           <TrendingProductCard
             key={product._id}
             id={product._id}
