@@ -14,10 +14,8 @@ const AllCategory = async () => {
   return (
     <div>
       {Categories?.map((item: any, index: any) => (
-        <Link href={`/categories/${item}`}>
-          <Button key={index} className="p-16 m-2">
-            {item}
-          </Button>
+        <Link key={index} href={`/categories/${item}`}>
+          <Button className="p-16 m-2">{item}</Button>
         </Link>
       ))}
     </div>
