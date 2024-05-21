@@ -15,8 +15,15 @@ const AllCategory = async ({ params }: any) => {
       {/* category product  */}
       <SectionCard Rtitle="" Ltitle={data?.data[0]?.category__name} />
       <div className="grid lg:grid-cols-5 grid-cols-1 p-3 gap-3">
-        {data?.data.map((p: any) => (
-          <CategoryCard key={p.id} product={p} />
+        {data?.data?.map((product: any) => (
+          <CategoryCard
+            key={product._id}
+            id={product._id}
+            title={product.title}
+            price={product.price}
+            img={product.images__001}
+            discount={product.discount}
+          />
         ))}
       </div>
     </>

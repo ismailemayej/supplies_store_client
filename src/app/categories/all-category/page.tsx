@@ -16,11 +16,10 @@ const AllCategory = async () => {
       {Categories?.map((item: any, index: any) => (
         <Link href={`/categories/${item}`}>
           <Button key={index} className="p-16 m-2">
-            {" "}
-            {item}{" "}
+            {item}
           </Button>
         </Link>
-      ))}{" "}
+      ))}
     </div>
   );
 };
