@@ -1,6 +1,5 @@
 "use client";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
-import Container from "@/components/ui/Container";
 import { Input } from "@nextui-org/react";
 import { Search } from "lucide-react";
 import Link from "next/link";
@@ -10,7 +9,7 @@ const Navbar = () => {
   const menu = [
     {
       name: "Dashboard",
-      link: "/dashboard",
+      link: "dashboard/category?category=Floor%20Cleaners",
     },
     {
       name: "All Category",
