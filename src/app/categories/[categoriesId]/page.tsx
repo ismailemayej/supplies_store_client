@@ -23,6 +23,7 @@ const AllCategory = async ({ searchParams }: any) => {
             price={product.price}
             img={product.images__001}
             discount={product.discount}
+            rating={product.ratings}
           />
         ))}
       </div>
