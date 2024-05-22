@@ -6,14 +6,16 @@ import Link from "next/link";
 import { FaCircleUser } from "react-icons/fa6";
 import { RiLogoutCircleRLine } from "react-icons/ri";
 const Navbar = () => {
+  const allProducts = "all-products";
   const menu = [
+    {
+      name: "All Products",
+      link: `/all-products/category?category=${allProducts}`,
+    },
+
     {
       name: "Dashboard",
       link: "/dashboard/category?category=Floor%20Cleaners",
-    },
-    {
-      name: "All Category",
-      link: "/categories/all-category",
     },
   ];
 

@@ -13,7 +13,7 @@ const AllCategory = async ({ searchParams }: any) => {
   return (
     <>
       {/* category product  */}
-      <SectionCard Rtitle="" Ltitle={data?.data[0]?.category__name} />
+      <SectionCard Rtitle="" Ltitle={searchParams.category} />
       <div className="grid lg:grid-cols-5 grid-cols-2 p-3 gap-3">
         {data?.data?.map((product: any) => (
           <ProductCard

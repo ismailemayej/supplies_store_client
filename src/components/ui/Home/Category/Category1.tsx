@@ -13,11 +13,9 @@ const Category1 = async () => {
   return (
     <div className=" justify-center">
       <SectionCard
-        Ltitle={data.data[0].category__name}
+        Ltitle={category}
         Rtitle={
-          <Link
-            href={`/categories/category?category=${data.data[0].category__name}`}
-          >
+          <Link href={`/all-products/category?category=${category}`}>
             See All
           </Link>
         }
