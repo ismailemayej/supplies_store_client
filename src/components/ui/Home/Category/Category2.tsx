@@ -15,7 +15,9 @@ const Category2 = async () => {
       <SectionCard
         Ltitle={data.data[0].category__name}
         Rtitle={
-          <Link href={`/categories/${data.data[0].category__name}`}>
+          <Link
+            href={`/categories/category?category=${data.data[0].category__name}`}
+          >
             See All
           </Link>
         }

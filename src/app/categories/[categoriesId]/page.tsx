@@ -1,9 +1,9 @@
 import ProductCard from "@/components/ui/ProductCard";
 import SectionCard from "@/components/ui/SectionCard";
 import React from "react";
-const AllCategory = async ({ params }: any) => {
+const AllCategory = async ({ searchParams }: any) => {
   const res = await fetch(
-    `https://supplies-store-server.vercel.app/api/v1?category=${params.categoriesId}`,
+    `https://supplies-store-server.vercel.app/api/v1?category=${searchParams.category}`,
     {
       cache: "no-store",
     }
